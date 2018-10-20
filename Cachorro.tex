@@ -25,22 +25,22 @@
 
 Para um explorador espacial é extremamente importante poder confiar na sua espaçonave, para tanto é imprescindível que se possua mecanismos que automatize o processo de busca por falhas estruturais na fuselagem e correção delas, ou se impossível a correção notifique a tripulação para que as medidas adequadas sejam tomadas o mais rápido possível, de modo a evitar que problemas maiores possam ocorrer. 
 
-O nosso drone busca resolver os seguintes problemas de forma automática e autônoma:
+O nosso robô busca resolver os seguintes problemas de forma automática e autônoma:
 \begin{itemize}
 	\item Manter a tripulação de um veiculo espacial ciente dos danos sofridos na fuselagem;
 	\item Reduzir o numero EVA (Atividade fora do veiculo) para reparos da fuselagem;
 	\item Diminuir riscos da tripulação e evitar acidentes. 
 \end{itemize}
 
-Devido ao fato desse drone ser pensado para para atividades extra veicular, imaginamos a construção dele como um cachorro com 4 patas com pontas magnéticas, a fim de se fixar na fuselagem da nave e poder andar por toda a sua extensão, scaneando a fuselagem procurando por falhas, corrigindo as que são possível de serem corrigida e notificando a tripulação sobre os problemas encontrados. 
+Devido ao fato desse robô ser pensado para para atividades extra veicular, imaginamos a construção dele como um cachorro com 4 patas com pontas magnéticas, a fim de se fixar na fuselagem da nave e poder andar por toda a sua extensão, escaneando a fuselagem procurando por falhas, corrigindo as que são possível de serem corrigida e notificando a tripulação sobre os problemas encontrados. 
 
-Além disso o drone deve possuir um conjunto de sensores de micro-ondas e ultravioleta, sensor de detecção de ar, para buscar microfissuras que provocam aspiração da atmosfera, além de câmeras para visão e controle da tripulação caso necessário e mais um braço mecânico com mecanismos de conserto da fuselagem.
+Além disso o robô deve possuir um conjunto de sensores de micro-ondas e ultravioleta, sensor de detecção de ar, para buscar microfissuras que provocam aspiração da atmosfera, além de câmeras para visão e controle da tripulação caso necessário e mais um braço mecânico com mecanismos de conserto da fuselagem.
 
-Por questões de segurança e para melhorar manobrabilidade o drone deve ter um giroscópio completo de três eixos e propulsores de CO$_2$.
+Por questões de segurança e para melhorar manobrabilidade o robô deve ter um giroscópio completo de três eixos, ou um sistema de magnetorque e propulsores de hidrazina.
 
 \section{Considerações}
 
-Agora começamos a analisar algumas dos problemas que podem ser encontrados durante a utilização do drone ou resolvidos pela utilização do drone.
+Agora começamos a analisar algumas dos problemas que podem ser encontrados durante a utilização do robô ou resolvidos pela utilização do robô.
 
 \begin{itemize}
 	\item Dimensão do dano: 
@@ -55,23 +55,27 @@ Agora começamos a analisar algumas dos problemas que podem ser encontrados duran
 
 \subsection{Dimensão do Danos}
 
-De acordo com o Handbook for Designing MMOD Protection (\cite{mmod}) danos causados por mmod podem variar entre 1~mm e 2" com cerca de até 3" de profundidade antes de serem considerados uma falha catastrófica da proteção da fuselagem, sendo assim o drone poderia ser capaz de injetar no buraco algum tipo de matéria liquido com endurecimento rápido e capacidade expansiva de modo a cobrir todo o buraco e evitar um problema maior. 
+De acordo com o Handbook for Designing MMOD Protection (\cite{mmod}) danos causados por mmod podem variar entre 1~mm e 2" com cerca de até 3" de profundidade antes de serem considerados uma falha catastrófica da proteção da fuselagem, sendo assim o robô poderia ser capaz de injetar no buraco algum tipo de matéria liquido com endurecimento rápido e capacidade expansiva de modo a cobrir todo o buraco e evitar um problema maior. 
 
 \subsection{Iluminação e sombras}
 
-Para sensores do tipo eletromagnetico, tal como sensor de micro-ondas e sensor de ultravioleta, ou seja, sensores que atuam fora do espectro do visível, a incidência de luz ou a existências de sombras a principio não deveriam alterar a capacidade desses sensores de localizar os problemas na fuselagem, principalmente que o nosso modelo de drone a principio deveria utilizar os sensores sempre preferencialmente com o mesmo ângulo de incidência, de modo a garantir uma leitura constante, procurando minimizar falsos positivos, ou negativos. 
+Para sensores do tipo eletromagnético, tal como sensor de micro-ondas e sensor de ultravioleta, ou seja, sensores que atuam fora do espectro do visível, a incidência de luz ou a existências de sombras a principio não deveriam alterar a capacidade desses sensores de localizar os problemas na fuselagem, principalmente que o nosso modelo de robô a principio deveria utilizar os sensores sempre preferencialmente com o mesmo ângulo de incidência, de modo a garantir uma leitura constante, procurando minimizar falsos positivos, ou negativos. 
 
 \subsection{Superfícies de inspeção}
 
-Temos por objetivo que o nosso drone seja capaz de verificar toda a superfície da espaçonave, ou estação espacial, incluindo superfícies transparentes.
+Temos por objetivo que o nosso robô seja capaz de verificar toda a superfície da espaçonave, ou estação espacial, incluindo superfícies transparentes.
 
 \subsection{Gravidade zero}
 
-Como o nosso drone tem por objetivo ``andar'' pela superfície do veículo, ele não deve apresentar muito problemas com a gravidade zero, porém eventualmente pode ser necessário se soltar da fuselagem para alcançar partes específicas, ou as partes que não for possível se manter conectado por efeito dos eletroímãs, para esses casos colocamos no drone um sistema de giroscópio completo de  3 eixos, para que seja possível fazer manobras sem gasto de combustível e também colocamos um conjunto de propulsores de CO$_2$ de modo a garantir que seja possível se aproximar e se afastar da nave caso necessário. 
+Como o nosso robô tem por objetivo ``andar'' pela superfície do veículo, ele não deve apresentar muito problemas com a gravidade zero, porém eventualmente pode ser necessário se soltar da fuselagem para alcançar partes específicas, ou as partes que não for possível se manter conectado por efeito dos eletroímãs, para esses casos colocamos no robô um sistema de giroscópio completo de  3 eixos, para que seja possível fazer manobras sem gasto de combustível e também colocamos um conjunto de propulsores de CO$_2$ de modo a garantir que seja possível se aproximar e se afastar da nave caso necessário. 
+
+\subsection{Plano de trabalho}
+
+Considerando um formato cilíndrico para a estação espacial ISS, o robô realizaria uma trajetória em espiral subindo do meio da estação até a ponta e voltando fazendo o trajeto pela parte que ele quase não passou anteriormente, de modo a garantir que toda a superfície da estação seja analisada em uma única viagem
 
 \section{Conclusão}
 
-No projeto inicial tínhamos pensado em um drone com com esteiras com eletroímã, porém devido as dificuldades técnicas da implementação de uma esteira giratória com eletroímãs décimos por alterar para ``patas'' (braços articulados) com eletroímãs nas pontas para fixação na fuselagem. 
+No projeto inicial tínhamos pensado em um robô com com esteiras com eletroímã, porém devido as dificuldades técnicas da implementação de uma esteira giratória com eletroímãs décimos por alterar para ``patas'' (braços articulados) com eletroímãs nas pontas para fixação na fuselagem. 
 
 \begin{thebibliography}{9}
 
@@ -84,3 +88,7 @@ No projeto inicial tínhamos pensado em um drone com com esteiras com eletroímã, 
 \end{thebibliography}
 
 \end{document}
+
+
+%made in space
+% 

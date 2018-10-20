@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Cachorro.tex
 
 [Frame0_View0,0]
-TopLine=105
-Cursor=4509
+TopLine=25
+Cursor=5570
 
 [SessionInfo]
 FrameCount=1
