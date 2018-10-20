@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
 NormalPos.right=954
-NormalPos.bottom=505
+NormalPos.bottom=698
 Class=LaTeXView
 Document=Cachorro.tex
 
 [Frame0_View0,0]
-TopLine=61
-Cursor=2623
+TopLine=105
+Cursor=4509
 
 [SessionInfo]
 FrameCount=1

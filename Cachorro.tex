@@ -55,10 +55,32 @@ Agora começamos a analisar algumas dos problemas que podem ser encontrados duran
 
 \subsection{Dimensão do Danos}
 
+De acordo com o Handbook for Designing MMOD Protection (\cite{mmod}) danos causados por mmod podem variar entre 1~mm e 2" com cerca de até 3" de profundidade antes de serem considerados uma falha catastrófica da proteção da fuselagem, sendo assim o drone poderia ser capaz de injetar no buraco algum tipo de matéria liquido com endurecimento rápido e capacidade expansiva de modo a cobrir todo o buraco e evitar um problema maior. 
 
+\subsection{Iluminação e sombras}
+
+Para sensores do tipo eletromagnetico, tal como sensor de micro-ondas e sensor de ultravioleta, ou seja, sensores que atuam fora do espectro do visível, a incidência de luz ou a existências de sombras a principio não deveriam alterar a capacidade desses sensores de localizar os problemas na fuselagem, principalmente que o nosso modelo de drone a principio deveria utilizar os sensores sempre preferencialmente com o mesmo ângulo de incidência, de modo a garantir uma leitura constante, procurando minimizar falsos positivos, ou negativos. 
+
+\subsection{Superfícies de inspeção}
+
+Temos por objetivo que o nosso drone seja capaz de verificar toda a superfície da espaçonave, ou estação espacial, incluindo superfícies transparentes.
+
+\subsection{Gravidade zero}
+
+Como o nosso drone tem por objetivo ``andar'' pela superfície do veículo, ele não deve apresentar muito problemas com a gravidade zero, porém eventualmente pode ser necessário se soltar da fuselagem para alcançar partes específicas, ou as partes que não for possível se manter conectado por efeito dos eletroímãs, para esses casos colocamos no drone um sistema de giroscópio completo de  3 eixos, para que seja possível fazer manobras sem gasto de combustível e também colocamos um conjunto de propulsores de CO$_2$ de modo a garantir que seja possível se aproximar e se afastar da nave caso necessário. 
 
 \section{Conclusão}
 
 No projeto inicial tínhamos pensado em um drone com com esteiras com eletroímã, porém devido as dificuldades técnicas da implementação de uma esteira giratória com eletroímãs décimos por alterar para ``patas'' (braços articulados) com eletroímãs nas pontas para fixação na fuselagem. 
+
+\begin{thebibliography}{9}
+
+\bibitem{mmod}
+  Dr. Eric L. Christiansen,
+  \textit{Handbook for Designing MMOD Protection},
+  Astromaterials Research and Exploration Science Directorate Human Exploration Science Office, NASA Johnson Space Center,
+  June 2009.
+
+\end{thebibliography}
 
 \end{document}
