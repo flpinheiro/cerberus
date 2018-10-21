@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.13)  20 OCT 2018 10:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.13)  20 OCT 2018 22:41
 entering extended mode
 **./Cachorro.tex
 (Cachorro.tex
@@ -271,39 +271,50 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 ("C:\Users\flpin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
 ("C:\Users\flpin\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
 
 [1
 
-{C:/Users/flpin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-[3] (Cachorro.aux) ) 
+{C:/Users/flpin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<cerberus.jpeg, id=12, 963.6pt x 542.025pt>
+File: cerberus.jpeg Graphic file (type jpg)
+<use cerberus.jpeg>
+Package pdftex.def Info: cerberus.jpeg  used on input line 46.
+(pdftex.def)             Requested size: 345.0pt x 194.06194pt.
+ [2 <./cerberus.jpeg>] [3]
+<iss.jpg, id=21, 1204.5pt x 803.0pt>
+File: iss.jpg Graphic file (type jpg)
+<use iss.jpg>
+Package pdftex.def Info: iss.jpg  used on input line 89.
+(pdftex.def)             Requested size: 345.0pt x 229.99689pt.
+ [4 <./iss.jpg>] [5] (Cachorro.aux) ) 
 Here is how much of TeX's memory you used:
- 3165 strings out of 492976
- 42546 string characters out of 3126751
- 111420 words of memory out of 3000000
- 6968 multiletter control sequences out of 15000+200000
- 16825 words of font info for 49 fonts, out of 3000000 for 9000
+ 3173 strings out of 492976
+ 42639 string characters out of 3126751
+ 111436 words of memory out of 3000000
+ 6971 multiletter control sequences out of 15000+200000
+ 15902 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,629b,203s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
-knappen\ec\dpi600\ecti1000.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\flpin\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\flpin\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0900.pk> <C:\User
-s\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
-> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm1728.pk><C:/Users/flpin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><C:/Users/flpin/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Cachorro.pdf (3 pages, 88940 bytes).
+ 41i,6n,25p,827b,230s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\flpin\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\flpin\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\flpin\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\f
+lpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <
+C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx
+1440.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
+pi600\ecbx0900.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\ecrm1200.pk> <C:\Users\flpin\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/Users/flpin/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Cachorro.pdf (5 pages, 323187 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
+ 286 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

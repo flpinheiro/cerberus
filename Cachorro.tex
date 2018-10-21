@@ -23,59 +23,89 @@
 
 \section{Introdução}
 
-Para um explorador espacial é extremamente importante poder confiar na sua espaçonave, para tanto é imprescindível que se possua mecanismos que automatize o processo de busca por falhas estruturais na fuselagem e correção delas, ou se impossível a correção notifique a tripulação para que as medidas adequadas sejam tomadas o mais rápido possível, de modo a evitar que problemas maiores possam ocorrer. 
+%Para um explorador espacial é extremamente importante poder confiar na sua espaçonave, para tanto é imprescindível que se possua mecanismos que automatize o processo de busca por falhas estruturais na fuselagem e correção delas, ou se impossível a correção notifique a tripulação para que as medidas adequadas sejam tomadas o mais rápido possível, de modo a evitar que problemas maiores possam ocorrer. 
+
+A tripulação de um veículo espacial não consegue ter ciência dos danos sofridos na fuselagem, para tal a tripulação da ISS - Estação espacial internacional, siglas em inglês, escanear manualmente com uso do braço mecânico e câmera de vídeo a fuselagem da estação para buscar por avaria, gastando um tempo precioso dos astronautas. E quando encontrada precisa realizar o reparo pessoalmente, sendo que E.V.A`s - atividades extra veicular, ou ``space walk'' são extremamente arriscadas para os astronautas, portanto, precisamos de um mecanismo que automatize o processo de busca e reparo de possíveis danos na fuselagem da nave. 
+
+O nosso projeto \textit{Cerberus} é um robô autônomo com capacidade de micro-escaneamento, com o objetivo de localizar danos causado por detritos espaciais na fuselagem do veículo, sendo que pequenos danos se não corrigidos em tempo hábil podem colocar em risco a vida da tripulação e a própria missão espacial.   
 
 O nosso robô busca resolver os seguintes problemas de forma automática e autônoma:
 \begin{itemize}
-	\item Manter a tripulação de um veiculo espacial ciente dos danos sofridos na fuselagem;
-	\item Reduzir o numero EVA (Atividade fora do veiculo) para reparos da fuselagem;
-	\item Diminuir riscos da tripulação e evitar acidentes. 
+	\item Escanear a fuselagem e localizar danos causados por detritos espaciais.
+	\item Corrigir pequenos danos na fuselagem e avisar a tripulação dos danos maiores.
+	\item Reduzir o numero EVA para reparos da fuselagem;
+	\item Diminuir riscos da tripulação e evitar acidentes;
+	\item Gerar relatórios  de analise da fuselagem.
 \end{itemize}
 
-Devido ao fato desse robô ser pensado para para atividades extra veicular, imaginamos a construção dele como um cachorro com 4 patas com pontas magnéticas, a fim de se fixar na fuselagem da nave e poder andar por toda a sua extensão, escaneando a fuselagem procurando por falhas, corrigindo as que são possível de serem corrigida e notificando a tripulação sobre os problemas encontrados. 
+Devido ao fato desse robô ser pensado para para EVA, imaginamos a construção dele como um cachorro com 4 patas articuladas com pontas magnéticas, a fim de se fixar na fuselagem da nave e poder andar por toda a sua extensão, com sensores de diversos tipos acoplados em seu corpo, rastreando, catalogando e corrigindo as falhas que estão dentro da sua capacidade de correção e a notificando a tripulação da existência de cada possível falha na estrutura da nave. 
 
-Além disso o robô deve possuir um conjunto de sensores de micro-ondas e ultravioleta, sensor de detecção de ar, para buscar microfissuras que provocam aspiração da atmosfera, além de câmeras para visão e controle da tripulação caso necessário e mais um braço mecânico com mecanismos de conserto da fuselagem.
+Veja na figura \ref{fig:cerberus} o modelo atual do projeto \textit{Cerberus}.
 
-Por questões de segurança e para melhorar manobrabilidade o robô deve ter um giroscópio completo de três eixos, ou um sistema de magnetorque e propulsores de hidrazina.
+\begin{figure}
+\includegraphics[width=\columnwidth]{cerberus}
+\caption{Esquema do projeto Cerberus}
+\label{fig:cerberus}
+\end{figure}
+
+As especificações projetadas iniciais do robô são:
+\begin{itemize}
+	\item \textbf{Tamanho estimado}: 20 cm de diâmetro por 10 cm de altura
+	\item \textbf{Processamento}: Hardware de básico com baixo consumo de consumo de energia (tipo mobile), com comunicação sem fio direta e constante com a nave, possibilitando o uso do hardware da nave para ``computação em nuvem'', além de garantir um controle manual dos astronautas caso seja necessário.
+	\item \textbf{Sensores}: Ópticos, eletromagnéticos, câmera, detector de gás.
+	\item \textbf{Composição}: Pode ser construído em diversos matérias diferentes, tais como titânio, alumínio, aço, ou via impressora 3d, entre outros. 
+	\item \textbf{Mobilidade}: A principio 4 pernas mecânicas  articulas com pontas magnéticas, além de sistema de propulsão de hidrazina (atuadores) e giroscópio de 3 eixos que serão usados preferencialmente em situações de emergência,
+\end{itemize}
+
+%Além disso o robô deve possuir um conjunto de sensores de micro-ondas e ultravioleta, sensor de detecção de ar, para buscar microfissuras que provocam aspiração da atmosfera, além de câmeras para visão e controle da tripulação caso necessário e mais um braço mecânico com mecanismos de conserto da fuselagem.
+
+%Por questões de segurança e para melhorar manobrabilidade o robô deve ter um giroscópio completo de três eixos, ou um sistema de magnetorque e propulsores de hidrazina.
 
 \section{Considerações}
 
-Agora começamos a analisar algumas dos problemas que podem ser encontrados durante a utilização do robô ou resolvidos pela utilização do robô.
-
-\begin{itemize}
-	\item Dimensão do dano: 
-	\item Iluminação e sombras:
-	\item Superfícies de inspeção:
-	\item Gravidade zero:
-	\item Plano de trabalho:
-	\item Autonomia:
-	\item Evolução da Situação da fuselagem:
-	\item 
-\end{itemize}
+Agora começamos a analisar algumas dos problemas que podem ser encontrados ou resolvidos pela utilização do robô.
 
 \subsection{Dimensão do Danos}
 
-De acordo com o Handbook for Designing MMOD Protection (\cite{mmod}) danos causados por mmod podem variar entre 1~mm e 2" com cerca de até 3" de profundidade antes de serem considerados uma falha catastrófica da proteção da fuselagem, sendo assim o robô poderia ser capaz de injetar no buraco algum tipo de matéria liquido com endurecimento rápido e capacidade expansiva de modo a cobrir todo o buraco e evitar um problema maior. 
+De acordo com o Handbook for Designing MMOD Protection (\cite{mmod}) danos causados por detritos espaciais podem variar entre 1~mm e 2" com cerca de até 3" de profundidade , sendo assim o robô poderia ser capaz de consertar o buraco com um impressora 3d, ou algum método de soldagem dependendo dependendo do tamanho e do formato do buraco. 
 
 \subsection{Iluminação e sombras}
 
-Para sensores do tipo eletromagnético, tal como sensor de micro-ondas e sensor de ultravioleta, ou seja, sensores que atuam fora do espectro do visível, a incidência de luz ou a existências de sombras a principio não deveriam alterar a capacidade desses sensores de localizar os problemas na fuselagem, principalmente que o nosso modelo de robô a principio deveria utilizar os sensores sempre preferencialmente com o mesmo ângulo de incidência, de modo a garantir uma leitura constante, procurando minimizar falsos positivos, ou negativos. 
+Para sensores do tipo eletromagnético, tal como sensor de micro-ondas e sensor de ultravioleta, ou seja, sensores que atuam fora do espectro do visível, a incidência de luz ou a existências de sombras a principio não deveriam alterar a capacidade desses sensores de localizar os problemas na fuselagem, porém como temos sistema de câmeras para fazer registros dos buracos encontrados, antes e depois de serem consertados será necessário a inclusão de algum sistema de iluminação. 
 
 \subsection{Superfícies de inspeção}
 
-Temos por objetivo que o nosso robô seja capaz de verificar toda a superfície da espaçonave, ou estação espacial, incluindo superfícies transparentes.
+Temos por objetivo que o nosso robô seja capaz de verificar toda a superfície da espaçonave, ou estação espacial, incluindo superfícies transparentes e placas solares.
 
 \subsection{Gravidade zero}
 
-Como o nosso robô tem por objetivo ``andar'' pela superfície do veículo, ele não deve apresentar muito problemas com a gravidade zero, porém eventualmente pode ser necessário se soltar da fuselagem para alcançar partes específicas, ou as partes que não for possível se manter conectado por efeito dos eletroímãs, para esses casos colocamos no robô um sistema de giroscópio completo de  3 eixos, para que seja possível fazer manobras sem gasto de combustível e também colocamos um conjunto de propulsores de CO$_2$ de modo a garantir que seja possível se aproximar e se afastar da nave caso necessário. 
+Como o nosso robô tem por objetivo ``andar'' pela superfície do veículo, ele não deve apresentar problemas com a gravidade zero, porém eventualmente pode ser necessário se soltar da fuselagem para alcançar partes específicas, ou as partes que não for possível se manter conectado por efeito dos eletroímãs, para esses casos colocamos no robô um sistema de giroscópio completo de  3 eixos, para que seja possível fazer manobras sem gasto de combustível e também colocamos um conjunto de propulsores de Hidrazina de modo a garantir que seja possível se aproximar e se afastar da nave caso necessário. 
 
 \subsection{Plano de trabalho}
 
-Considerando um formato cilíndrico para a estação espacial ISS, o robô realizaria uma trajetória em espiral subindo do meio da estação até a ponta e voltando fazendo o trajeto pela parte que ele quase não passou anteriormente, de modo a garantir que toda a superfície da estação seja analisada em uma única viagem
+Considerando um formato cilíndrico para a estação espacial ISS, o robô realizaria uma trajetória em espiral subindo do meio da estação até a ponta e voltando fazendo o trajeto pela parte que ele quase não passou anteriormente, de modo a garantir que toda a superfície da estação seja analisada em uma única viagem. Como na ISS as placas solares ficam nas duas extremidades e o robô é incapaz de andar sobre elas, devido a fragilidade das placas e a escassez de áreas metálicas, decidimos colocar um sistema de cabos de segurança perto das placas solares onde o robô pode se acoplar para fazer um sobre voo sobre elas, escaneando-as mais de perto e ao mesmo tempo se recarregando para continuar suas operações normais, garantindo assim um aumento de tempo de autonomia e uma maior segurança a operação. 
+
+\begin{figure}%
+\includegraphics[width=\columnwidth]{iss}%
+\caption{Estação Especial Internacional}%
+\label{fig:ISS}%
+\end{figure} 
+
+\subsection{Autonomia}
+
+Com a evolução das baterias e dos sistemas de movimentação de robôs e motores eletromecânico, esperamos que a autonomia de funcionamento desse protótipo seja de cerca de 5h ou 6h de trabalho continuo, o que poderia  ser suficiente para um robô sozinho ser capaz de analisar toda a fuselagem de uma nave de um tamanho aproximado de um ônibus espacial, dependendo da velocidade de funcionamento dele. 
+
+\subsection{Evolução da Situação da fuselagem}
+
+O sistema de coleta de dados do robô seria usado para manter uma descrição da situação real da fuselagem completa da espaçonave, mostrando em detalhes problemas de fuselagem e áreas onde os reparos precisão ser feito de modo mais atencioso e completo, direcionando a atuação dos astronautas nas suas EVA`s minimizando assim o tempo e o risco das operações. 
 
 \section{Conclusão}
 
-No projeto inicial tínhamos pensado em um robô com com esteiras com eletroímã, porém devido as dificuldades técnicas da implementação de uma esteira giratória com eletroímãs décimos por alterar para ``patas'' (braços articulados) com eletroímãs nas pontas para fixação na fuselagem. 
+Acreditamos que o \textit{Cerberus} será eficiente na prevenção de acidentes e na preservação da vida.
+
+Servindo de inspiração para futuras gerações de robôs  completamente autônomos até para missões não tripuladas. Inclusive acreditasse que essa  tecnologia será popularizada para uso doméstico em futuro não tão distante.
+
+%No projeto inicial tínhamos pensado em um robô com com esteiras com eletroímã, porém devido as dificuldades técnicas da implementação de uma esteira giratória com eletroímãs décimos por alterar para ``patas'' (braços articulados) com eletroímãs nas pontas para fixação na fuselagem. 
 
 \begin{thebibliography}{9}
 
